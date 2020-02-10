@@ -5,60 +5,105 @@
 	<title>Mule Magic</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
-    <link href='https://fonts.googleapis.com/css?family=Ultra|Stint+Ultra+Expanded|Muli:300' rel='stylesheet' type='text/css'>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>	
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="scripts/magic.js"></script>
 
 </head>
 
-<body>
-  <div id="page-wrapper">
-    <div id="page1" class="page row">
-      <div class="col-md-4 left">
-        <h1>Page</h1><h2>One</h2>
-      </div>
-      <div class="col-md-8 right">
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-        <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-      </div>
-      <div class="pagenav row">
-        <div class="btn" onclick="nextpage(1);">Next</div>
-      </div>
+ <div style="height:40px;"></div>
+    <div class="assessment-container container">
+        <div class="row">
+            <div class="col-md-6 form-box">
+                <form role="form" class="registration-form" action="javascript:void(0);">
+                    <fieldset>
+                        <div class="form-top">
+                            <div class="form-top-left">
+                                <h3><span><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>Lorem ipsum dolor sit amet</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            <div class="row">
+                                <div class="form-group col-md-6 col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Firstname" id="fname">
+                                </div>
+                                <div class="form-group col-md-6 col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Lastname" id="lname">
+                                </div>
+                            </div>
+                            <div class="form-group" style="margin-bottom:3px;">
+                                <div class="row">
+                                    <div class="form-group col-md-3 col-sm-3">
+                                        <select class="form-control">
+                                            <option>00</option>
+                                            <option>00</option>
+                                            <option>00</option>
+                                            <option>00</option>
+                                            <option>00</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-9 col-sm-9">
+                                        <input type="text" class="form-control" placeholder="Contact Number" id="contact_number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="email" placeholder="Email" class="form-email form-control" id="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option>Gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+                            
+                            <button type="button" class="btn btn-next">Next</button>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-top">
+                            <div class="form-top-left">
+                                <h3><span><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span> Lorem ipsum dolor sit amet</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option>Location</option>
+                                    <option>Location</option>
+                                    <option>Location</option>
+                                    <option>Location</option>
+                                    <option>Locationa</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="date" class="form-control" id="pref_date">
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option>Preffered Time</option>
+                                    <option>Location</option>
+                                    <option>Location</option>
+                                    <option>Location</option>
+                                    <option>Location</option>
+                                    <option>Locationa</option>
+                                </select>
+                            </div>
+                            <button type="button" class="btn btn-previous">Previous</button>
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
     </div>
-    <div id="page2" class="page" style="display:none;">
-      <div class="col-md-4 left">
-        <h1>Page</h1><h2>Two</h2>
-      </div>
-      <div class="col-md-8 right">
-        <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
-        <p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-        <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
-      </div>
-      <div class="pagenav">
-        <div class="btn" onclick="prevpage(2)">Previous</div>
-        &nbsp;&nbsp;&nbsp;
-        <div class="btn" onclick="nextpage(2)">Next</div>
-      </div>
-    </div>
-    <div id="page3" class="page" style="display:none;">
-      <div class="col-md-4 left">
-        <h1>Page</h1><h2>Three</h2>
-      </div>
-      <div class="col-md-8 right">
-        <p>Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.</p>
-        <p>The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
-        <p>But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again.</p>
-      </div>
-      <div class="pagenav">
-        <div class="btn" onclick="prevpage(3)">Previous</div>
-      </div>
-    </div>
-  </div>
-</body>
 
 </html>
