@@ -167,6 +167,7 @@ $('.registration-form .btn-submit').on('click', function () {
             async: false,
         success: function(result){
             alert("good:1 " + result.secretnumber);
+            document.getElementById("p1").innerHTML = result.secretnumber;
             alert(JSON.stringify(result));
         },
         error: function (result, status, error) {
