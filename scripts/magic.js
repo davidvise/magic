@@ -158,7 +158,7 @@ $('.registration-form').on('xxxsubmit', function (e) {
 });
 
 $('.registration-form .btn-submit').on('click', function () {
-  var api_url = 'http://magic.au-s1.cloudhub.io/api/guessnumber?card1=y&card2=n&card3=n&card4=y&card5=y&card6=n'
+  var api_url = 'http://mulemagic.au-s1.cloudhub.io/api/guessnumber?card1=y&card2=n&card3=n&card4=y&card5=y&card6=n'
  
  $.ajax({
             type: 'GET',
