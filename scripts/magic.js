@@ -158,22 +158,22 @@ $('.registration-form').on('xxxsubmit', function (e) {
 });
 
 $('.registration-form .btn-submit').on('click', function () {
-  var api_url = 'https://api.linkpreview.net'
-  var key = '5b578yg9yvi8sogirbvegoiufg9v9g579gviuiub8' // not real
-
-    $.ajax({
-        url: api_url + "?key=" + key + " &q=" + $( this ).text(),
-        contentType: "application/json",
-        dataType: 'json',
+  var api_url = 'http://magic.au-s1.cloudhub.io/api/guessnumber?card1=y&card2=n&card3=n&card4=y&card5=y&card6=n'
+ 
+ $.ajax({
+            type: 'GET',
+            url: api_url, 
+            dataType: 'json',
+            async: false,
         success: function(result){
             alert(result);
         },
         error: function (result, status, error) {
-        alert(result.responseText);
-        alert(status);
-        alert(error);
-    		}
-    })
+        		alert("bad: " + error);
+        }
+        });
+ 
+   
 
   var parent_fieldset = $(this).parents('fieldset');
     
