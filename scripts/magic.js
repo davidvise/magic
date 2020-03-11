@@ -166,7 +166,7 @@ $('.registration-form .btn-submit').on('click', function () {
             dataType: 'json',
             async: false,
         success: function(result){
-            alert("good:1 " + result);
+            alert("good:1 " + result.secretnumber);
             alert(JSON.stringify(result));
         },
         error: function (result, status, error) {
