@@ -167,6 +167,7 @@ $('.registration-form .btn-submit').on('click', function () {
             async: false,
         success: function(result){
             alert("good: " + result);
+            alert(JSON.stringify(result));
         },
         error: function (result, status, error) {
         		alert("bad: " + error);
