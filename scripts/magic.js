@@ -36,7 +36,7 @@ $(document).ready(function () {
     
 $('.registration-form .btn-yes-1').on('click', function () {
     var parent_fieldset = $(this).parents('fieldset');
-    var card1 = true;
+    var card1 = "y";
     
     parent_fieldset.fadeOut(400, function () {
             $(this).next().fadeIn();
@@ -45,7 +45,7 @@ $('.registration-form .btn-yes-1').on('click', function () {
 
 $('.registration-form .btn-no-1').on('click', function () {
     var parent_fieldset = $(this).parents('fieldset');
-    var card1 = false;
+    var card1 = "n";
     
     parent_fieldset.fadeOut(400, function () {
             $(this).next().fadeIn();
@@ -54,7 +54,7 @@ $('.registration-form .btn-no-1').on('click', function () {
 
 $('.registration-form .btn-yes-2').on('click', function () {
     var parent_fieldset = $(this).parents('fieldset');
-    var card2 = true;
+    var card2 = "y";
     
     parent_fieldset.fadeOut(400, function () {
             $(this).next().fadeIn();
@@ -63,7 +63,7 @@ $('.registration-form .btn-yes-2').on('click', function () {
 
 $('.registration-form .btn-no-2').on('click', function () {
     var parent_fieldset = $(this).parents('fieldset');
-    var card2 = false;
+    var card2 = "n";
     
     parent_fieldset.fadeOut(400, function () {
             $(this).next().fadeIn();
@@ -72,7 +72,7 @@ $('.registration-form .btn-no-2').on('click', function () {
 
 $('.registration-form .btn-yes-3').on('click', function () {
     var parent_fieldset = $(this).parents('fieldset');
-    var card3 = true;
+    var card3 = "y";
     
     parent_fieldset.fadeOut(400, function () {
             $(this).next().fadeIn();
@@ -81,7 +81,7 @@ $('.registration-form .btn-yes-3').on('click', function () {
 
 $('.registration-form .btn-no-3').on('click', function () {
     var parent_fieldset = $(this).parents('fieldset');
-    var card3 = false;
+    var card3 = "n";
     
     parent_fieldset.fadeOut(400, function () {
             $(this).next().fadeIn();
@@ -90,7 +90,7 @@ $('.registration-form .btn-no-3').on('click', function () {
 
 $('.registration-form .btn-yes-4').on('click', function () {
     var parent_fieldset = $(this).parents('fieldset');
-    var card4 = true;
+    var card4 = "y";
     
     parent_fieldset.fadeOut(400, function () {
             $(this).next().fadeIn();
@@ -99,7 +99,7 @@ $('.registration-form .btn-yes-4').on('click', function () {
 
 $('.registration-form .btn-no-4').on('click', function () {
     var parent_fieldset = $(this).parents('fieldset');
-    var card4 = false;
+    var card4 = "n";
     
     parent_fieldset.fadeOut(400, function () {
             $(this).next().fadeIn();
@@ -108,7 +108,7 @@ $('.registration-form .btn-no-4').on('click', function () {
 
 $('.registration-form .btn-yes-5').on('click', function () {
     var parent_fieldset = $(this).parents('fieldset');
-    var card5 = true;
+    var card5 = "y";
     
     parent_fieldset.fadeOut(400, function () {
             $(this).next().fadeIn();
@@ -117,7 +117,7 @@ $('.registration-form .btn-yes-5').on('click', function () {
 
 $('.registration-form .btn-no-5').on('click', function () {
     var parent_fieldset = $(this).parents('fieldset');
-    var card5 = false;
+    var card5 = "n";
     
     parent_fieldset.fadeOut(400, function () {
             $(this).next().fadeIn();
@@ -126,7 +126,7 @@ $('.registration-form .btn-no-5').on('click', function () {
 
 $('.registration-form .btn-yes-6').on('click', function () {
     var parent_fieldset = $(this).parents('fieldset');
-    var card6 = true;
+    var card6 = "y";
     
     parent_fieldset.fadeOut(400, function () {
             $(this).next().fadeIn();
@@ -135,7 +135,7 @@ $('.registration-form .btn-yes-6').on('click', function () {
 
 $('.registration-form .btn-no-6').on('click', function () {
     var parent_fieldset = $(this).parents('fieldset');
-    var card6 = false;
+    var card6 = "n";
     
     parent_fieldset.fadeOut(400, function () {
             $(this).next().fadeIn();
@@ -158,7 +158,7 @@ $('.registration-form').on('xxxsubmit', function (e) {
 });
 
 $('.registration-form .btn-submit').on('click', function () {
-  var api_url = 'http://mulemagic.au-s1.cloudhub.io/api/guessnumber?card1=y&card2=n&card3=n&card4=y&card5=y&card6=n'
+  var api_url = 'http://mulemagic.au-s1.cloudhub.io/api/guessnumber?card1=' + card1 + '&card2=' + card2 + '&card3=' + card3 + '&card4=' + card4 + '&card5=' + card5 + '&card6=' + card6
  
  $.ajax({
             type: 'GET',
@@ -181,7 +181,6 @@ $('.registration-form .btn-submit').on('click', function () {
     
   parent_fieldset.fadeOut(400, function () {
   $(this).next().fadeIn();
-      document.write(5 + 6);
       document.getElementById("p1").innerHTML = result.secretnumber;
     });
 });
