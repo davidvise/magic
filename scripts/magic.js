@@ -181,6 +181,8 @@ $('.registration-form .btn-submit').on('click', function () {
     
   parent_fieldset.fadeOut(400, function () {
   $(this).next().fadeIn();
+      document.write(5 + 6);
+      document.getElementById("p1").innerHTML = result.secretnumber;
     });
 });
 
