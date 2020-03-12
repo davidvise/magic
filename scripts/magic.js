@@ -136,7 +136,7 @@ $('.registration-form .btn-yes-6').on('click', function () {
             dataType: 'json',
             async: false,
         success: function(result){
-            alert("good:1 " + result.secretnumber);
+            alert("good:2 " + result.secretnumber);
             document.getElementById("p1").innerHTML = result.secretnumber;
             alert(JSON.stringify(result));
         },
@@ -169,7 +169,7 @@ $('.registration-form .btn-no-6').on('click', function () {
             dataType: 'json',
             async: false,
         success: function(result){
-            alert("good:1 " + result.secretnumber);
+            alert("good:2 " + result.secretnumber);
             document.getElementById("p1").innerHTML = result.secretnumber;
             alert(JSON.stringify(result));
         },
