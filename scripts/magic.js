@@ -186,7 +186,6 @@ $('.registration-form .btn-no-6').on('click', function () {
   $(this).next().fadeIn();
       document.getElementById("p1").innerHTML = result.secretnumber;
     });
-});
 
 });
 
@@ -231,7 +230,4 @@ $('.registration-form .btn-submit').on('click', function () {
   $(this).next().fadeIn();
       document.getElementById("p1").innerHTML = result.secretnumber;
     });
-});
-
-   
 });
