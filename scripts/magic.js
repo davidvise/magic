@@ -128,7 +128,7 @@ $('.registration-form .btn-yes-6').on('click', function () {
     var parent_fieldset = $(this).parents('fieldset');
     var card6 = "y";
     
-      var api_url = 'http://mulemagic.au-s1.cloudhub.io/api/guessnumber?card1=' + 'y' + '&card2=' + 'y' + '&card3=' + 'n' + '&card4=' + 'n' + '&card5=' + 'y' + '&card6=' + 'n'
+      var api_url = 'http://mulemagic.au-s1.cloudhub.io/api/guessnumber?card1=' + card1 + '&card2=' + card2 + '&card3=' + card3 + '&card4=' + card4 + '&card5=' + card5 + '&card6=' + card6
  
  $.ajax({
             type: 'GET',
@@ -161,7 +161,7 @@ $('.registration-form .btn-no-6').on('click', function () {
     var parent_fieldset = $(this).parents('fieldset');
     var card6 = "n";
     
-      var api_url = 'http://mulemagic.au-s1.cloudhub.io/api/guessnumber?card1=' + 'y' + '&card2=' + 'y' + '&card3=' + 'n' + '&card4=' + 'n' + '&card5=' + 'y' + '&card6=' + 'n'
+      var api_url = 'http://mulemagic.au-s1.cloudhub.io/api/guessnumber?card1=' + card1 + '&card2=' + card2 + '&card3=' + card3 + '&card4=' + card4 + '&card5=' + card5 + '&card6=' + card6
  
  $.ajax({
             type: 'GET',
@@ -205,7 +205,7 @@ $('.registration-form').on('xxxsubmit', function (e) {
 });
 
 $('.registration-form .btn-submit').on('click', function () {
-  var api_url = 'http://mulemagic.au-s1.cloudhub.io/api/guessnumber?card1=' + 'y' + '&card2=' + 'y' + '&card3=' + 'n' + '&card4=' + 'n' + '&card5=' + 'y' + '&card6=' + 'n'
+  var api_url = 'http://mulemagic.au-s1.cloudhub.io/api/guessnumber?card1=' + card1 + '&card2=' + card2 + '&card3=' + card3 + '&card4=' + card4 + '&card5=' + card5 + '&card6=' + card6
  
  $.ajax({
             type: 'GET',
