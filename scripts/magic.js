@@ -127,7 +127,7 @@ $('.registration-form .btn-no-5').on('click', function () {
 $('.registration-form .btn-yes-6').on('click', function () {
     var parent_fieldset = $(this).parents('fieldset');
     var card6 = "y";
-    
+    alert(card6);
       var api_url = 'http://mulemagic.au-s1.cloudhub.io/api/guessnumber?card1=' + card1 + '&card2=' + card2 + '&card3=' + card3 + '&card4=' + card4 + '&card5=' + card5 + '&card6=' + card6
  
  $.ajax({
