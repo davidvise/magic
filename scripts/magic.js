@@ -213,7 +213,7 @@ $('.registration-form .btn-submit').on('click', function () {
             dataType: 'json',
             async: false,
         success: function(result){
-            alert("good:1 " + result.secretnumber);
+            alert("good:? " + result.secretnumber);
             document.getElementById("p1").innerHTML = result.secretnumber;
             alert(JSON.stringify(result));
         },
