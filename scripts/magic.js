@@ -145,7 +145,7 @@ $(document).ready(function() {
    success: function(result) {
     //alert("good:2 " + result.secretnumber);
     document.getElementById("p1").innerHTML = result.secretnumber;
-    alert(JSON.stringify(result));
+    //alert(JSON.stringify(result));
    },
    error: function(result, status, error) {
     alert("bad: " + error);
@@ -176,7 +176,7 @@ $(document).ready(function() {
    success: function(result) {
     //alert("good: 2 " + result.secretnumber);
     document.getElementById("p1").innerHTML = result.secretnumber;
-    alert(JSON.stringify(result));
+    //alert(JSON.stringify(result));
    },
    error: function(result, status, error) {
     alert("bad: " + error);
