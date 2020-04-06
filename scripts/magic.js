@@ -174,7 +174,7 @@ $(document).ready(function() {
    dataType: 'json',
    async: false,
    success: function(result) {
-    //alert("good:2 " + result.secretnumber);
+    //alert("good: 2 " + result.secretnumber);
     document.getElementById("p1").innerHTML = result.secretnumber;
     alert(JSON.stringify(result));
    },
