@@ -53,6 +53,7 @@ $(document).ready(function() {
  $('.registration-form .btn-no-1').on('click', function() {
   var parent_fieldset = $(this).parents('fieldset');
    card1 = "n";
+  alert("NO");
 
   parent_fieldset.fadeOut(400, function() {
    $(this).next().fadeIn();
