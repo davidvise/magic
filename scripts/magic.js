@@ -142,7 +142,7 @@ $(document).ready(function() {
    type: 'GET',
    url: api_url,
    dataType: 'json',
-   async: false,
+   async: true,
    success: function(result) {
     //alert("good:2 " + result.secretnumber);
     document.getElementById("p1").innerHTML = result.secretnumber;
@@ -173,7 +173,7 @@ $(document).ready(function() {
    type: 'GET',
    url: api_url,
    dataType: 'json',
-   async: false,
+   async: true,
    success: function(result) {
     //alert("good: 2 " + result.secretnumber);
     document.getElementById("p1").innerHTML = result.secretnumber;
