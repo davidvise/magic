@@ -276,7 +276,7 @@ h3 {
     -moz-border-radius: 4px 4px 0 0;
     -webkit-border-radius: 4px 4px 0 0;
     border-radius: 4px 4px 0 0;
-    text-align: left;
+    text-align: center;
     color: #fff;
     transition: opacity .3s ease-in-out;
 }
@@ -291,7 +291,7 @@ h3 {
     -moz-border-radius: 0 0 4px 4px;
     -webkit-border-radius: 0 0 4px 4px;
     border-radius: 0 0 4px 4px;
-    text-align: left;
+    text-align: center;
     transition: all .4s ease-in-out;
 }
 
