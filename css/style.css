@@ -6,7 +6,7 @@ select.form-control {
     margin: 0;
     padding: 0 20px;
     vertical-align: middle;
-    background: #f8f8f8;
+    background: #fffff8;
     border: 3px solid #ddd;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -100,7 +100,7 @@ button.btn {
     margin: 0;
     padding: 0 20px;
     vertical-align: middle;
-    background: #26A69A;
+    background: #00A0DF;
     ;
     border: 0;
     font-family: 'Roboto', sans-serif;
@@ -272,7 +272,7 @@ h3 {
 .form-top {
     overflow: hidden;
     padding: 0 25px 15px 25px;
-    background: #26A69A;
+    background: #00A0DF;
     -moz-border-radius: 4px 4px 0 0;
     -webkit-border-radius: 4px 4px 0 0;
     border-radius: 4px 4px 0 0;
@@ -311,4 +311,5 @@ form .form-bottom .input-error {
 
 form.registration-form fieldset {
     display: none;
+    text-align: center !important;
 }
