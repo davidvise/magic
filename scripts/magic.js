@@ -141,6 +141,10 @@ $(document).ready(function() {
    type: 'GET',
    url: api_url,
    dataType: 'json',
+   headers: {
+                'client_id': '4525722806c544fb826dbad37eda4043',
+                'client_secret': 'c8a0916e9dB441C6a380A73f1DDC90e9'
+   },
    async: true,
    success: function(result) {
     //alert("good:2 " + result.secretnumber);
@@ -172,6 +176,10 @@ $(document).ready(function() {
    type: 'GET',
    url: api_url,
    dataType: 'json',
+   headers: {
+                'client_id': '4525722806c544fb826dbad37eda4043',
+                'client_secret': 'c8a0916e9dB441C6a380A73f1DDC90e9'
+   },
    async: true,
    success: function(result) {
     //alert("good: 2 " + result.secretnumber);
