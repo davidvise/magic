@@ -136,7 +136,7 @@ $(document).ready(function() {
   var parent_fieldset = $(this).parents('fieldset');
    card6 = "y";
   
-  var api_url = 'http://mulemagic.au-s1.cloudhub.io/api/guessnumber?card1=' + card1 + '&card2=' + card2 + '&card3=' + card3 + '&card4=' + card4 + '&card5=' + card5 + '&card6=' + card6
+  var api_url = 'https://mulemagic.au-s1.cloudhub.io/api/guessnumber?card1=' + card1 + '&card2=' + card2 + '&card3=' + card3 + '&card4=' + card4 + '&card5=' + card5 + '&card6=' + card6
 
   $.ajax({
    type: 'GET',
@@ -167,7 +167,7 @@ $(document).ready(function() {
   var parent_fieldset = $(this).parents('fieldset');
    card6 = "n";
 
-  var api_url = 'http://mulemagic.au-s1.cloudhub.io/api/guessnumber?card1=' + card1 + '&card2=' + card2 + '&card3=' + card3 + '&card4=' + card4 + '&card5=' + card5 + '&card6=' + card6
+  var api_url = 'https://mulemagic.au-s1.cloudhub.io/api/guessnumber?card1=' + card1 + '&card2=' + card2 + '&card3=' + card3 + '&card4=' + card4 + '&card5=' + card5 + '&card6=' + card6
 
   $.ajax({
    type: 'GET',
